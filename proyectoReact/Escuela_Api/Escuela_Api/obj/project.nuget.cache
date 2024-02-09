@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Oq2dV8r5Oiqmd993bK6/NlWw1ECYo0nA4MnG7wY+ZzSLtfCaLKbX7BzjWCuzmGBVZMa6qFazRvZlbCRShhU8Qg==",
+  "dgSpecHash": "aXGzMyNfvQK3EqFtki+2ZgOGSOjmZBpc4n7cwY9Q1+dQBOcu9n/B5RMtM/KDueRvE3q7JvJ1YLAMuOtyGu9qGw==",
   "success": true,
   "projectFilePath": "C:\\Users\\claud\\proyectoReact\\Escuela_Api\\Escuela_Api\\Escuela_Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\claud\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\claud\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\claud\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
