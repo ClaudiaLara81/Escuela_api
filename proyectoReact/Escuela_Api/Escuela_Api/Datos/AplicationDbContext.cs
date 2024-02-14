@@ -10,6 +10,7 @@ namespace Escuela_Api.Datos
 
         }
         public DbSet<Student> students {  get; set; }
+        public DbSet<NumberStudent> NumberStudents { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
