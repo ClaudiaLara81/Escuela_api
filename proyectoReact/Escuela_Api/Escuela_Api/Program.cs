@@ -1,5 +1,7 @@
 using Escuela_Api;
 using Escuela_Api.Datos;
+using Escuela_Api.Repository;
+using Escuela_Api.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +18,9 @@ builder.Services.AddDbContext<AplicationDbContext>(option =>
 });
 
 builder.Services.AddAutoMapper(typeof(MappingConfig));
+
+builder.Services.AddScoped<IStudentRepository,StudentRepository>();
+builder.Services.AddScoped<INumberStudentRepository, NumberStudentRepository>();
 
 var app = builder.Build();
 

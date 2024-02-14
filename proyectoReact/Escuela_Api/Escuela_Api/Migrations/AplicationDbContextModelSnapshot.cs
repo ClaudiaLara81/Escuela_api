@@ -22,6 +22,25 @@ namespace EscuelaApi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Escuela_Api.Models.NumberStudent", b =>
+                {
+                    b.Property<int>("StudentNo")
+                        .HasColumnType("int");
+
+                    b.Property<string>("DetailSpecial")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("StudentNo");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("numberStudents");
+                });
+
             modelBuilder.Entity("Escuela_Api.Models.Student", b =>
                 {
                     b.Property<int>("Id")
@@ -142,6 +161,17 @@ namespace EscuelaApi.Migrations
                             NumeroMatricula = "123457",
                             Telefono = "9838324158"
                         });
+                });
+
+            modelBuilder.Entity("Escuela_Api.Models.NumberStudent", b =>
+                {
+                    b.HasOne("Escuela_Api.Models.Student", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Student");
                 });
 #pragma warning restore 612, 618
         }
